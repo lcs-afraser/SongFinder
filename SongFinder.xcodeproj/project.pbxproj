@@ -17,6 +17,7 @@
 		6EBBECFB29F45CB600721D5F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBBECFA29F45CB600721D5F /* NetworkService.swift */; };
 		6EBBED0029F461E400721D5F /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBBECFF29F461E400721D5F /* AudioPlayerView.swift */; };
 		6EBBED0229F461F400721D5F /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBBED0129F461F400721D5F /* RemoteImageView.swift */; };
+		6ED0BC5D29F4652B0042ED89 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0BC5C29F4652B0042ED89 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6EBBECFA29F45CB600721D5F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6EBBECFF29F461E400721D5F /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		6EBBED0129F461F400721D5F /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		6ED0BC5C29F4652B0042ED89 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		6EBBECF229F45B1500721D5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6ED0BC5C29F4652B0042ED89 /* db.sqlite */,
 				6EBBECF329F45B1E00721D5F /* Song.swift */,
 				6EBBECF529F45B9900721D5F /* SearchResult.swift */,
 			);
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EBBECE929F45AA800721D5F /* Preview Assets.xcassets in Resources */,
+				6ED0BC5D29F4652B0042ED89 /* db.sqlite in Resources */,
 				6EBBECE629F45AA700721D5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
