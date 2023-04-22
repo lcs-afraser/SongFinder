@@ -5,17 +5,18 @@
 //  Created by Alistair Fraser on 2023-04-22.
 //
 
+import Blackbird
 import Foundation
 
-struct Song: Codable {
-    let trackId: Int
-    let artistName: String
-    let collectionName: String
-    let trackName: String
-    let artistViewUrl: String
-    let collectionViewUrl: String
-    let previewUrl: String
-    let artworkUrl100: String
+struct Song: Codable, BlackbirdModel {
+    @BlackbirdColumn var trackId: Int
+    @BlackbirdColumn var artistName: String
+    @BlackbirdColumn var collectionName: String
+    @BlackbirdColumn var trackName: String
+    @BlackbirdColumn var artistViewUrl: String
+    @BlackbirdColumn var collectionViewUrl: String
+    @BlackbirdColumn var previewUrl: String
+    @BlackbirdColumn var artworkUrl100: String
 }
 
 
