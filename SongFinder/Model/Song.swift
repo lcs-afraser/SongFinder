@@ -10,7 +10,7 @@ import Foundation
 struct Song: Codable {
     let trackId: Int
     let artistName: String
-    let colectionName: String
+    let collectionName: String
     let trackName: String
     let artistViewUrl: String
     let collectionViewUrl: String

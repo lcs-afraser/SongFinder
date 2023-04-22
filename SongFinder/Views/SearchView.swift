@@ -18,13 +18,14 @@ struct SearchView: View {
     var body: some View {
         //Show a list of songs that match the search term
         List(foundSongs, id: \.trackId) { currentSong in
+            
             VStack(alignment: .leading) {
                 HStack {
                     Text(currentSong.trackName)
                         .bold()
                     Spacer()
                 }
-                Text(currentSong.colectionName)
+                Text(currentSong.collectionName)
                     .italic()
                 Text(currentSong.artistName)
             }
