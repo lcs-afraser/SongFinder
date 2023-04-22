@@ -17,7 +17,7 @@ struct SearchView: View {
     //MARK: Computed properties
     var body: some View {
         //Show a list of songs that match the search term
-        List(foundSongs id: \.trackId) { currentSong in
+        List(foundSongs, id: \.trackId) { currentSong in
             VStack {
                 Text(currentSong.trackName)
                     .bold()
