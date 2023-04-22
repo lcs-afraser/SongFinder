@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    //MARK: Stored propeties
+    
+    //Holds the list of songs returned by our search
+    @State var foundSongs: [Song] = []
+    
+    //MARK: Computed properties
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //Show a list of songs that match the search term
+        List(foundSongs id: \.trackId) { currentSong in
+            VStack {
+                Text(currentSong.trackName)
+                    .bold()
+                Text(currentSong.artistName)
+            }
+        }
     }
 }
 
