@@ -24,6 +24,10 @@ struct SearchView: View {
                 Text(currentSong.artistName)
             }
         }
+        .task {
+            //When the view apepars, fetch search results for "anti-hero"
+            foundSongs = await NetworkService.fetch()
+        }
     }
 }
 
