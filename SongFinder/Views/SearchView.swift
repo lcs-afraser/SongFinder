@@ -31,8 +31,8 @@ struct SearchView: View {
             }
         }
         .task {
-            //When the view apepars, fetch search results for "anti-hero"
-            foundSongs = await NetworkService.fetch()
+            //When the view apepars, fetch search results for a song of our choice
+            foundSongs = await NetworkService.fetch(resultsFor: "as it was")
         }
     }
 }
