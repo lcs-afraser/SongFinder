@@ -20,6 +20,7 @@
 		6ED0BC5D29F4652B0042ED89 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0BC5C29F4652B0042ED89 /* db.sqlite */; };
 		6ED0BC6029F4657B0042ED89 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED0BC5F29F4657B0042ED89 /* Blackbird */; };
 		6ED0BC6329F465980042ED89 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0BC6229F465980042ED89 /* AppDatabase.swift */; };
+		6ED0BC6529F466300042ED89 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0BC6429F466300042ED89 /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6EBBED0129F461F400721D5F /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		6ED0BC5C29F4652B0042ED89 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = SOURCE_ROOT; };
 		6ED0BC6229F465980042ED89 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		6ED0BC6429F466300042ED89 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				6EBBECFC29F461AF00721D5F /* Helpers */,
 				6EBBECF029F45AC500721D5F /* SongDetailView.swift */,
 				6EBBECF729F45BEC00721D5F /* SearchView.swift */,
+				6ED0BC6429F466300042ED89 /* FavouritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				6EBBECF129F45AC500721D5F /* SongDetailView.swift in Sources */,
 				6EBBECF629F45B9A00721D5F /* SearchResult.swift in Sources */,
 				6EBBECFB29F45CB600721D5F /* NetworkService.swift in Sources */,
+				6ED0BC6529F466300042ED89 /* FavouritesView.swift in Sources */,
 				6EBBECE229F45AA400721D5F /* SongFinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
