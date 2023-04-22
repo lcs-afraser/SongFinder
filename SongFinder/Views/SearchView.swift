@@ -21,18 +21,23 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             List(foundSongs, id: \.trackId) { currentSong in
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text(currentSong.trackName)
-                            .bold()
-                        Spacer()
+                NavigationLink(destination: {
+                    SongDetailView(songToShow: currentSong)
+                }, label: {
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text(currentSong.trackName)
+                                .bold()
+                            Spacer()
+                        }
+                        Text(currentSong.collectionName)
+                            .italic()
+                        Text(currentSong.artistName)
                     }
-                    Text(currentSong.collectionName)
-                        .italic()
-                    Text(currentSong.artistName)
-                }
+                })
+              
             }
+            .navigationTitle("Song Finder")
             .searchable(text: $searchText)
             .onChange(of: searchText) { newSearchText in
                 Task {
