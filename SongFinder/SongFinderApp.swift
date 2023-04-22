@@ -12,6 +12,7 @@ struct SongFinderApp: App {
     var body: some Scene {
         WindowGroup {
             SearchView()
+                .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }
 }
