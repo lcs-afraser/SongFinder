@@ -18,6 +18,8 @@
 		6EBBED0029F461E400721D5F /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBBECFF29F461E400721D5F /* AudioPlayerView.swift */; };
 		6EBBED0229F461F400721D5F /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBBED0129F461F400721D5F /* RemoteImageView.swift */; };
 		6ED0BC5D29F4652B0042ED89 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0BC5C29F4652B0042ED89 /* db.sqlite */; };
+		6ED0BC6029F4657B0042ED89 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED0BC5F29F4657B0042ED89 /* Blackbird */; };
+		6ED0BC6329F465980042ED89 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0BC6229F465980042ED89 /* AppDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		6EBBECFF29F461E400721D5F /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		6EBBED0129F461F400721D5F /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		6ED0BC5C29F4652B0042ED89 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = SOURCE_ROOT; };
+		6ED0BC6229F465980042ED89 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED0BC6029F4657B0042ED89 /* Blackbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				6EBBECE129F45AA400721D5F /* SongFinderApp.swift */,
+				6ED0BC6129F465840042ED89 /* Helpers */,
 				6EBBECF229F45B1500721D5F /* Model */,
 				6EBBECF929F45CA600721D5F /* Services */,
 				6EBBECEF29F45AB700721D5F /* Views */,
@@ -120,6 +125,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6ED0BC6129F465840042ED89 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0BC6229F465980042ED89 /* AppDatabase.swift */,
+			);
+			name = Helpers;
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +150,9 @@
 			dependencies = (
 			);
 			name = SongFinder;
+			packageProductDependencies = (
+				6ED0BC5F29F4657B0042ED89 /* Blackbird */,
+			);
 			productName = SongFinder;
 			productReference = 6EBBECDE29F45AA400721D5F /* SongFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 6EBBECD529F45AA400721D5F;
+			packageReferences = (
+				6ED0BC5E29F4657B0042ED89 /* XCRemoteSwiftPackageReference "Blackbird" */,
+			);
 			productRefGroup = 6EBBECDF29F45AA400721D5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED0BC6329F465980042ED89 /* AppDatabase.swift in Sources */,
 				6EBBED0029F461E400721D5F /* AudioPlayerView.swift in Sources */,
 				6EBBECF829F45BEC00721D5F /* SearchView.swift in Sources */,
 				6EBBED0229F461F400721D5F /* RemoteImageView.swift in Sources */,
@@ -399,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6ED0BC5E29F4657B0042ED89 /* XCRemoteSwiftPackageReference "Blackbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcoarment/Blackbird";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6ED0BC5F29F4657B0042ED89 /* Blackbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ED0BC5E29F4657B0042ED89 /* XCRemoteSwiftPackageReference "Blackbird" */;
+			productName = Blackbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6EBBECD629F45AA400721D5F /* Project object */;
 }
